@@ -1,7 +1,5 @@
 #%%
 import numpy as np
-import pandas as pd 
-import matplotlib.pyplot as plt
 
 def back_to_back_stem_leaf_with_labels(data1, data2, label1, label2):
     # Convert each data point to an integer by multiplying by 10
