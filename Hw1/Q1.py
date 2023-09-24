@@ -56,3 +56,17 @@ print(" X bar of A = ", f'{A_mean:.4f}')
 print(" S square of A = ", f'{A_variance:.4f}')
 print(" X bar of R = ",  f'{R_mean:.4f}')
 print(" S square of R = ", f'{R_variance:.4f}')
+
+T_max_A[T_max_A == 12.4] = 124
+data_to_plot = [T_max_A.values.flatten(), T_max_R.values.flatten()]
+
+box = plt.boxplot(data_to_plot, positions=[1, 2],labels=["A", "R"])
+plt.title("Side-by-Side boxplot of sets A and R")
+fig = plt.figure(figsize =(10, 7))
+plt.show()
+
+print("Outliers of A = ", find_outliers(np.array(T_max_A)))
+A_mean = np.mean(np.array(T_max_A))
+A_variance = np.var(np.array(T_max_A), ddof=1)
+print(" X bar of A = ", f'{A_mean:.4f}')
+print(" S square of A = ", f'{A_variance:.4f}')
