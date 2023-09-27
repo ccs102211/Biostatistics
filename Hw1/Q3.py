@@ -52,7 +52,7 @@ print("Outliers of Memale = ", find_outliers(np.array(literacy_rates['male'])))
 #(c)
 plt.figure(figsize=(12, 5))
     
-    # Female histogram
+# Female histogram
 plt.subplot(1, 2, 1)
 plt.hist(literacy_rates['female'], bins=20, color='pink', alpha=0.7)
 plt.title('Female Literacy Rates Histogram')
