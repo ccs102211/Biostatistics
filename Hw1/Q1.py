@@ -64,6 +64,8 @@ T_max_A[T_max_A == 12.4] = 124
 data_to_plot2 = [T_max_A.values.flatten(), T_max_R.values.flatten()]
 
 box2 = plt.boxplot(data_to_plot2, positions=[1, 2], labels=["A", "R"])
+plt.xlabel("Set")
+plt.ylabel("value")
 plt.title("Side-by-Side boxplot of sets A and R")
 fig = plt.figure(figsize=(10, 7))
 plt.show()

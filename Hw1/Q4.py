@@ -1,3 +1,4 @@
+# %%
 # Given data
 mean_regular = 59.9
 std_dev_regular = 10.2
